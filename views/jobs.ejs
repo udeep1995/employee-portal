@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+
+<div class="col-md-5 col-md-offset-3" style="margin-top: 5%;"> 
+<% jobs.forEach(job => {%> 
+    <div class="card">
+        <div class="card-body" id='<%=job._id%>'>
+          <h5 class="card-title"><%= job.projectname %> </h5>
+          <p class="card-text"><%= job.jobdescription%></p>
+          <a href="/api/apply/openings/<%=job._id%>" class="card-link">Apply</a>
+          <a href="/api/jobs/openings/<%=job._id%>" class="card-link">View Position</a>
+        </div>
+      </div>
+<%})%>
+</div>
+
+

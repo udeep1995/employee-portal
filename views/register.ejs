@@ -1,0 +1,31 @@
+
+<div class="col-md-5 col-md-offset-3" style="margin-top: 10%;"> 
+  <form action="/api/users/register" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control" required placeholder="Enter name">
+    </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" required placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="password" class="form-control" required placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label>Role: </label>
+        <input type="radio" name="role" value="employee">Employee 
+        <input type="radio" name="role" value="manager">Manager
+      </div>
+      <div class="col">
+          <input type="submit" class="btn btn-primary" value="Register"></input>
+      </div>
+      <div class="col">
+        <p>Alredy registered!!! Please login using below link</p>
+        <a href= "/login" class="btn btn-success">Login</a>
+      </div>
+        </div>
+      </div>
+    </form>
+  </div>
